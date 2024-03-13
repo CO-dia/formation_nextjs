@@ -1,9 +1,11 @@
-import Image from "next/image";
+import ResourceHighlight from "@/components/ResourceHighlight";
+import { resources } from "../../api/data";
 
 export default function Home() {
+
   return (
-    <main>
-      <h1>Hello</h1>     
+    <main>   
+      <ResourceHighlight resources={resources}/>
     </main>
   );
 }
